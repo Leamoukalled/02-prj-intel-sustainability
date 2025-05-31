@@ -1,1 +1,377 @@
 /* Add your CSS here */
+
+/* Intel-style font and base styles */
+body {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  background: #181f2a; /* Dark background */
+  color: #e6eaf3;      /* Light text */
+  margin: 0;
+  padding: 0;
+  cursor: none; /* Hide default cursor, use our custom one */
+}
+
+/* Custom animated blue cursor */
+#custom-cursor {
+  position: fixed;
+  left: 0; top: 0;
+  width: 20px;
+  height: 20px;
+  pointer-events: none; /* Let clicks pass through */
+  border-radius: 50%;
+  background: radial-gradient(circle at 40% 40%, #4fc3f7 70%, #0071c5 100%);
+  box-shadow:
+    0 0 16px 6px #4fc3f7,
+    0 0 32px 12px #0071c5,
+    0 0 4px 2px #fff3;
+  z-index: 10000;
+  transition: background 0.2s, box-shadow 0.2s;
+  /* Optional: animate scale on click/hover if desired */
+}
+
+/* Make sure the custom cursor is always on top */
+#custom-cursor {
+  mix-blend-mode: lighten;
+}
+
+/* Blue glowing particle background */
+#bg-particles {
+  position: fixed;
+  left: 0; top: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none; /* Let clicks pass through */
+  z-index: 0;
+}
+
+/* Header with blue gradient background */
+.intel-header {
+  background: linear-gradient(90deg, #003366 0%, #005fa3 100%);
+  color: #fff;
+  text-align: center;
+  padding: 2.5rem 1rem 2rem 1rem;
+  border-bottom-left-radius: 32px;
+  border-bottom-right-radius: 32px;
+}
+
+.intel-logo {
+  display: block;
+  margin: 0 auto 1.2rem auto;
+  border-radius: 8px;
+}
+
+.intel-header h1 {
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  margin: 0 0 1rem 0;
+  font-weight: 700;
+}
+
+.subheading {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Page Title */
+h1 {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+}
+
+/* Featured Article Styles */
+.featured-article {
+  background: #22304a;
+  border-left: 5px solid #0071c5; /* Blue accent */
+  padding: 2rem 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+/* Featured Article Heading */
+.featured-article h2 {
+  margin-top: 0;
+  font-size: 1.6rem;
+}
+
+/* Metadata List - shows items in a row */
+.metadata {
+  color: #666;
+  font-size: 0.95rem;
+  margin: 0.5rem 0 1rem 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* Regular Articles Section */
+.articles-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+/* Regular Article Styles */
+.regular-article {
+  background: #232b3a;
+  border: 1px solid #2d3a4d;
+  border-radius: 6px;
+  padding: 1.2rem 1rem;
+  color: #e6eaf3;
+}
+
+/* Regular Article Heading */
+.regular-article h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+/* Regular Article Metadata */
+.regular-article .metadata {
+  color: #888;
+  font-size: 0.92rem;
+  margin: 0.4rem 0 0.8rem 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+}
+
+/* Read More Link */
+.read-more {
+  display: inline-block;
+  margin-top: 0.7rem;
+  color: #0071c5;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+/* More Articles Section */
+.more-articles {
+  background: #232b3a;
+  border-radius: 6px;
+  padding: 1.2rem 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+  color: #e6eaf3;
+}
+
+/* More Articles Heading */
+.more-articles h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  margin-bottom: 0.7rem;
+}
+
+/* More Articles List */
+.more-articles ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.more-articles li {
+  margin-bottom: 0.5rem;
+}
+
+/* More Articles Links */
+.more-articles a {
+  color: #0071c5;
+  text-decoration: none;
+}
+
+.more-articles a:hover {
+  text-decoration: underline;
+}
+
+/* Timeline Section */
+.timeline {
+  display: flex;
+  overflow-x: auto;
+  gap: 1.5rem;
+  padding: 2rem 1rem 2rem 1rem;
+  background: transparent;
+  /* Enable scroll snap for smooth horizontal navigation */
+  scroll-snap-type: x mandatory;
+  /* Show scrollbar for horizontal scrolling */
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #253044 #181f2a; /* Less flashy: subtle dark blue and background */
+}
+
+/* Custom scrollbar for Webkit browsers (Chrome, Edge, Safari) */
+.timeline::-webkit-scrollbar {
+  height: 10px;
+  background: #181f2a; /* Subtle dark background */
+  border-radius: 6px;
+}
+
+.timeline::-webkit-scrollbar-thumb {
+  background: #253044; /* Subtle dark blue thumb */
+  border-radius: 6px;
+}
+
+.timeline::-webkit-scrollbar-thumb:hover {
+  background: #2d3a4d; /* Slightly lighter on hover */
+}
+
+/* Timeline Card Styles */
+.timeline-card {
+  background: #232b3a;
+  box-shadow: 0 2px 12px rgba(0,113,197,0.10);
+  min-width: 270px;
+  max-width: 270px;
+  flex: 0 0 270px;
+  padding: 1.2rem 1rem 1.5rem 1rem;
+  position: relative;
+  transition: 
+    transform 0.25s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.25s cubic-bezier(0.22, 1, 0.36, 1),
+    background 0.25s;
+  scroll-snap-align: start;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Card front content */
+.card-front {
+  text-align: center;
+  z-index: 1;
+  transition: opacity 0.3s;
+}
+
+/* Card year styling */
+.timeline-card .year {
+  display: inline-block;
+  background: #005fa3;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 12px;
+  padding: 0.2em 0.9em;
+  font-size: 1rem;
+  margin-bottom: 0.7rem;
+  letter-spacing: 1px;
+}
+
+.timeline-card h2 {
+  font-size: 1.1rem;
+  margin: 0.5rem 0 0.7rem 0;
+  font-weight: 700;
+  color: #4fc3f7;
+}
+
+.timeline-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 1px 6px rgba(0,113,197,0.07);
+  background: #181f2a;
+}
+
+/* Card back (hidden by default) */
+.card-back {
+  position: absolute;
+  left: 0; right: 0; top: 0; bottom: 0;
+  background: rgba(0, 31, 63, 0.97);
+  color: #e6eaf3;
+  border-radius: 18px;
+  padding: 2.2rem 1rem 1.5rem 1rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Show card back on hover */
+.timeline-card:hover {
+  /* Slightly lift and rotate the card for a dynamic effect */
+  transform: scale(1.07) translateY(-10px) rotate(-1deg);
+  box-shadow: 0 0 0 6px rgba(0,113,197,0.18), 0 12px 36px rgba(0,113,197,0.22), 0 2px 8px rgba(0,0,0,0.06);
+  background: #1a2332;
+}
+.timeline-card:hover .card-back {
+  opacity: 1;
+  pointer-events: auto;
+}
+.timeline-card:hover .card-front {
+  opacity: 0.15;
+}
+
+/* Caption below the timeline scroll bar */
+.scroll-caption {
+  text-align: center;
+  color: #4fc3f7;
+  font-size: 1rem;
+  margin-top: 0.5rem; /* Add space above the caption */
+  margin-bottom: 2rem;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive: Stack cards vertically on small screens */
+@media (max-width: 700px) {
+  .timeline {
+    flex-direction: column;
+    overflow-x: visible;
+    gap: 1.2rem;
+    padding: 1.2rem 0.5rem;
+    scroll-snap-type: none;
+  }
+  .timeline-card {
+    min-width: 0;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/* Make sure text is readable and well spaced */
+.timeline-card p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Make sure paragraphs are well spaced */
+p {
+  line-height: 1.6;
+  margin: 0.5rem 0 0.5rem 0;
+  color: #e6eaf3;
+}
+
+/* Author image styles */
+.author-img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%; /* Makes the image round */
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+/* Make the header logos a bit bigger and rectangle (not oval) */
+.small-logo {
+  width: 80px;   /* Increased from 60px to 80px */
+  height: auto;
+  margin-bottom: 0.7rem;
+  border-radius: 4px; /* Less rounding for a rectangle look */
+}
+
+/* Optional: Blue glow effect for all clickable elements */
+a:hover, .read-more:hover, .timeline-card:hover {
+  /* Add a subtle blue glow to the cursor area */
+  filter: drop-shadow(0 0 8px #0071c5);
+}
