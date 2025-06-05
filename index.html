@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sustainability Through the Ages | Intel Timeline</title>
   <!-- Use a modern, Intel-style font from Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet" />
+  <!-- Add Bootstrap RTL CSS for right-to-left support -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+  <!-- Add Bootstrap Icons CDN in the <head> section -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body dir="rtl">
   <!-- Background particle canvas for floating blue dots -->
   <canvas id="bg-particles"></canvas>
   <!-- Custom animated blue cursor -->
@@ -17,10 +21,10 @@
   <!-- Header Section with Intel branding -->
   <header class="intel-header">
     <!-- Intel-style logo (SVG or actual logo) -->
-    <img src="img/intel-header-logo.svg" alt="Intel Logo" class="intel-logo small-logo" />
-    <h1>SUSTAINABILITY THROUGH THE AGES</h1>
+    <img src="img/intel-header-logo.svg" alt="شعار إنتل" class="intel-logo small-logo" />
+    <h1>الاستدامة عبر العصور</h1>
     <p class="subheading">
-      Explore Intel’s journey through time, discovering how our commitment to innovation has shaped a more sustainable future for technology and our planet.
+      استكشف رحلة إنتل عبر الزمن، واكتشف كيف شكل التزامنا بالابتكار مستقبلاً أكثر استدامة للتقنية وكوكبنا.
     </p>
   </header>
 
@@ -29,132 +33,253 @@
     <!-- Timeline Card 1 -->
     <div class="timeline-card">
       <div class="card-front">
-        <span class="year">1968</span>
-        <h2>Intel Founded</h2>
-        <img src="img/1.jpg" alt="Intel Founded" />
+        <span class="year">١٩٦٨</span>
+        <h2>تأسيس إنتل</h2>
+        <img src="img/1.jpg" alt="تأسيس إنتل" />
       </div>
       <div class="card-back">
         <p>
-          Robert Noyce and Gordon Moore rename NM Electronics to Intel Corporation, laying the foundation for decades of innovation.
+          روبرت نويس وجوردون مور يغيران اسم شركة NM Electronics إلى إنتل، ويضعان الأساس لعقود من الابتكار التكنولوجي.
         </p>
       </div>
     </div>
     <!-- Timeline Card 2 -->
     <div class="timeline-card">
       <div class="card-front">
-        <span class="year">1971</span>
-        <h2>First Microprocessor</h2>
-        <img src="img/2.jpg" alt="First Microprocessor" />
+        <span class="year">١٩٧١</span>
+        <h2>أول معالج دقيق</h2>
+        <img src="img/2.jpg" alt="أول معالج دقيق" />
       </div>
       <div class="card-back">
         <p>
-          Intel debuts the 4004, the world's first commercial microprocessor, igniting the microprocessor revolution.
+          إنتل تطلق 4004، أول معالج دقيق تجاري في العالم، مما أشعل ثورة المعالجات الدقيقة.
         </p>
       </div>
     </div>
     <!-- Timeline Card 3 -->
     <div class="timeline-card">
       <div class="card-front">
-        <span class="year">1978</span>
-        <h2>8086 Processor</h2>
-        <!-- Use the actual image for 8086 Processor -->
-        <img src="img/3.jpg" alt="8086 Processor" />
+        <span class="year">١٩٧٨</span>
+        <h2>معالج 8086</h2>
+        <img src="img/3.jpg" alt="معالج 8086" />
       </div>
       <div class="card-back">
         <p>
-          Launch of the 8086 processor, establishing the x86 architecture that drives countless PCs and servers.
+          إطلاق معالج 8086، الذي أسس معمارية x86 التي تشغل العديد من أجهزة الكمبيوتر والخوادم.
         </p>
       </div>
     </div>
     <!-- Timeline Card 4 -->
     <div class="timeline-card">
       <div class="card-front">
-        <span class="year">1985</span>
-        <h2>386 Processor</h2>
-        <!-- Use the actual image for 386 Processor -->
-        <img src="img/4.jpg" alt="386 Processor" />
+        <span class="year">١٩٨٥</span>
+        <h2>معالج 386</h2>
+        <img src="img/4.jpg" alt="معالج 386" />
       </div>
       <div class="card-back">
         <p>
-          Intel introduces the 386 processor with 32-bit architecture, ushering in a new era of performance.
+          إنتل تقدم معالج 386 بمعمارية 32-بت، مما أحدث نقلة في الأداء وتعدد المهام لأجهزة الكمبيوتر الشخصية.
         </p>
       </div>
     </div>
     <!-- Timeline Card 5 -->
     <div class="timeline-card">
       <div class="card-front">
-        <span class="year">2006</span>
-        <h2>Peak GHG Emissions</h2>
-       
-        <img src="img/get.avif" alt="Peak GHG Emissions" />
+        <span class="year">٢٠٠٦</span>
+        <h2>ذروة انبعاثات الغازات الدفيئة</h2>
+        <img src="img/get.avif" alt="ذروة انبعاثات الغازات الدفيئة" />
       </div>
       <div class="card-back">
         <p>
-          Intel's highest annual greenhouse gas emissions for operations. Investments in abatement and renewables follow.
+          أعلى انبعاثات سنوية للغازات الدفيئة في عمليات إنتل. تلتها استثمارات كبيرة في المعالجة الكيميائية والطاقة المتجددة.
         </p>
       </div>
     </div>
     <!-- Timeline Card 6 -->
     <div class="timeline-card">
       <div class="card-front">
-        <span class="year">2020</span>
-        <h2>RISE Strategy</h2>
-        <!-- Use the actual image for RISE Strategy -->
-        <img src="img/images.jpg" alt="RISE Strategy" />
+        <span class="year">٢٠٢٠</span>
+        <h2>استراتيجية RISE</h2>
+        <img src="img/images.jpg" alt="استراتيجية RISE" />
       </div>
       <div class="card-back">
         <p>
-          Intel launches its RISE (Responsible, Inclusive, Sustainable, Enabling) strategy and 2030 goals.
+          إنتل تطلق استراتيجية RISE (المسؤولية، الشمول، الاستدامة، التمكين) وأهداف 2030.
         </p>
       </div>
     </div>
     <!-- Timeline Card 7 -->
     <div class="timeline-card">
       <div class="card-front">
-        <span class="year">2022</span>
-        <h2>Net-Zero By 2040</h2>
-        <!-- Use the actual image for Net-Zero By 2040 -->
-        <img src="img/download-3.jpg" alt="Net-Zero By 2040" />
+        <span class="year">٢٠٢٢</span>
+        <h2>صفر انبعاثات بحلول 2040</h2>
+        <img src="img/download-3.jpg" alt="صفر انبعاثات بحلول 2040" />
       </div>
       <div class="card-back">
         <p>
-          Intel commits to achieve net-zero greenhouse gas emissions (Scope 1 and 2) across global operations by 2040.
+          التزام إنتل بتحقيق صافي انبعاثات صفرية (النطاق 1 و2) في عملياتها العالمية بحلول عام 2040.
         </p>
       </div>
     </div>
     <!-- Timeline Card 8 -->
     <div class="timeline-card">
       <div class="card-front">
-        <span class="year">2023</span>
-        <h2>Renewable Electricity</h2>
-        <!-- Use the actual image for Renewable Electricity -->
-        <img src="img/download-4.jpg" alt="Renewable Electricity" />
+        <span class="year">٢٠٢٣</span>
+        <h2>الكهرباء المتجددة</h2>
+        <img src="img/download-4.jpg" alt="الكهرباء المتجددة" />
       </div>
       <div class="card-back">
         <p>
-          Intel achieves 99% renewable electricity usage worldwide, drastically lowering carbon emissions.
+          إنتل تحقق استخدام 99% من الكهرباء المتجددة عالمياً، مما يقلل الانبعاثات الكربونية بشكل كبير.
         </p>
       </div>
     </div>
     <!-- Timeline Card 9 -->
     <div class="timeline-card">
       <div class="card-front">
-        <span class="year">2024</span>
-        <h2>Sustainability Summit</h2>
-        <!-- Use the actual image for Sustainability Summit -->
-        <img src="img/images-1.jpg" alt="Sustainability Summit" />
+        <span class="year">٢٠٢٤</span>
+        <h2>قمة الاستدامة</h2>
+        <img src="img/images-1.jpg" alt="قمة الاستدامة" />
       </div>
       <div class="card-back">
         <p>
-          Intel hosts its first Sustainability Summit, uniting leaders to collaborate on sustainable semiconductor manufacturing.
+          إنتل تستضيف أول قمة استدامة لها، تجمع القادة للتعاون في تصنيع أشباه الموصلات المستدامة.
         </p>
       </div>
     </div>
   </section>
   <!-- Caption below the scroll bar -->
   <p class="scroll-caption">
-    Scroll to explore Intel's sustainability milestones!
+    مرر للاطلاع على محطات الاستدامة في إنتل!
   </p>
+
+  <!-- Responsive three-column layout using Bootstrap grid -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- First column -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="p-3 bg-dark rounded-3 text-light h-100">
+          <!-- محتوى العمود الأول -->
+          <h3>
+            <i class="bi bi-cpu-fill" aria-hidden="true"></i>
+            العمود الأول
+          </h3>
+          <p>هذا نص تجريبي للعمود الأول. يمكنك وضع أي محتوى هنا.</p>
+          <!-- Bootstrap styled Learn More link -->
+          <a href="#" class="btn btn-info btn-lg mt-2 w-100" role="button" style="font-weight:500;">
+            <i class="bi bi-arrow-left-circle"></i> اعرف المزيد
+          </a>
+        </div>
+      </div>
+      <!-- Second column -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="p-3 bg-dark rounded-3 text-light h-100">
+          <!-- محتوى العمود الثاني -->
+          <h3>
+            <i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>
+            العمود الثاني
+          </h3>
+          <p>هذا نص تجريبي للعمود الثاني. يمكنك وضع أي محتوى هنا.</p>
+          <!-- Bootstrap styled Learn More link -->
+          <a href="#" class="btn btn-info btn-lg mt-2 w-100" role="button" style="font-weight:500;">
+            <i class="bi bi-arrow-left-circle"></i> اعرف المزيد
+          </a>
+        </div>
+      </div>
+      <!-- Third column -->
+      <div class="col-12 col-md-12 col-lg-4 mb-4">
+        <div class="p-3 bg-dark rounded-3 text-light h-100">
+          <!-- محتوى العمود الثالث -->
+          <h3>
+            <i class="bi bi-globe2" aria-hidden="true"></i>
+            العمود الثالث
+          </h3>
+          <p>هذا نص تجريبي للعمود الثالث. يمكنك وضع أي محتوى هنا.</p>
+          <!-- Bootstrap styled Learn More link -->
+          <a href="#" class="btn btn-info btn-lg mt-2 w-100" role="button" style="font-weight:500;">
+            <i class="bi bi-arrow-left-circle"></i> اعرف المزيد
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Simple Bootstrap subscription form for Intel’s sustainability newsletter -->
+  <div class="container my-4">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 col-lg-6">
+        <!-- Form heading -->
+        <div class="bg-dark rounded-3 p-4 text-light mb-3">
+          <h4 class="mb-3">
+            <i class="bi bi-envelope-paper-heart"></i>
+            اشترك في نشرة الاستدامة من إنتل
+          </h4>
+          <!-- Bootstrap form -->
+          <form>
+            <div class="mb-3">
+              <label for="subscriberName" class="form-label">الاسم</label>
+              <input type="text" class="form-control" id="subscriberName" placeholder="أدخل اسمك" required>
+            </div>
+            <div class="mb-3">
+              <label for="subscriberEmail" class="form-label">البريد الإلكتروني</label>
+              <input type="email" class="form-control" id="subscriberEmail" placeholder="أدخل بريدك الإلكتروني" required>
+            </div>
+            <button type="submit" class="btn btn-info w-100 fw-bold">
+              <i class="bi bi-send"></i> اشترك الآن
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap Accordion Example: Sustainability FAQ -->
+  <div class="container my-4">
+    <div class="bg-dark rounded-3 p-4 text-light mb-3">
+      <h4 class="mb-3">
+        <i class="bi bi-question-circle"></i>
+        الأسئلة الشائعة حول الاستدامة
+      </h4>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item bg-dark border-0">
+          <h2 class="accordion-header" id="faqHeadingOne">
+            <button class="accordion-button collapsed bg-dark text-info" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne" aria-expanded="false" aria-controls="faqCollapseOne">
+              ما هي الاستدامة في إنتل؟
+            </button>
+          </h2>
+          <div id="faqCollapseOne" class="accordion-collapse collapse" aria-labelledby="faqHeadingOne" data-bs-parent="#faqAccordion">
+            <div class="accordion-body text-light">
+              الاستدامة في إنتل تعني تطوير تقنيات ومنتجات تقلل من التأثير البيئي وتدعم مستقبلًا أفضل للجميع.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item bg-dark border-0">
+          <h2 class="accordion-header" id="faqHeadingTwo">
+            <button class="accordion-button collapsed bg-dark text-info" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+              كيف يمكنني المشاركة في مبادرات الاستدامة؟
+            </button>
+          </h2>
+          <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo" data-bs-parent="#faqAccordion">
+            <div class="accordion-body text-light">
+              يمكنك المشاركة من خلال متابعة أخبار إنتل، الانضمام إلى النشرة البريدية، أو تطبيق ممارسات الاستدامة في حياتك اليومية.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item bg-dark border-0">
+          <h2 class="accordion-header" id="faqHeadingThree">
+            <button class="accordion-button collapsed bg-dark text-info" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+              أين أجد المزيد من الموارد حول الاستدامة؟
+            </button>
+          </h2>
+          <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree" data-bs-parent="#faqAccordion">
+            <div class="accordion-body text-light">
+              يمكنك زيارة موقع إنتل الرسمي أو التواصل معنا عبر صفحة "اتصل بنا" في الأسفل.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Custom cursor and particle animation script -->
   <script>
@@ -239,7 +364,20 @@
   </script>
   <!-- Copyright label at the very bottom -->
   <footer class="copyright-label">
-    &copy; 2024 Intel Timeline Demo. For educational purposes only.
+    <div class="container py-3">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-6 text-center text-md-start mb-2 mb-md-0">
+          &copy; 2024 Intel Timeline Demo. For educational purposes only.
+        </div>
+        <div class="col-12 col-md-6 text-center text-md-end">
+          <a href="#" class="link-light mx-2">سياسة الخصوصية</a>
+          <a href="#" class="link-light mx-2">شروط الاستخدام</a>
+          <a href="#" class="link-light mx-2">اتصل بنا</a>
+        </div>
+      </div>
+    </div>
   </footer>
+  <!-- Bootstrap JS for interactive components -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
